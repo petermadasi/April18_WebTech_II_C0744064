@@ -19,9 +19,16 @@
 <div id="map"></div>
 <script>
 	var map;
-	var parks = [
-		{"park":"Yellowstone","coords":[44.4280,-110.5885]},
-		{"park":"Glacier","coords":[48.7596, -113.7870]}
+	var aboutme = [
+		{"park":"China","coords":[34.740765,101.319735]},
+		{"park":"Mumbai","coords":[18.940100, 72.834659]},
+        {"park":"Hanamkonda","coords":[18.035669, 79.537399]},
+        {"park":"Jarvis Street Toronto","coords":[43.669194, -79.379910]},
+        {"park":"Delhi","coords":[28.626963, 77.215396]},
+        {"park":"France","coords":[46.648713, 2.621566]},
+        {"park":"London","coords":[51.500152, -0.126236]}
+
+
 		];
 
 	function initMap() {
@@ -31,7 +38,7 @@
 			mapTypeId: 'terrain'
 		});
 
-		mashParks(parks);
+		mashParks(aboutme);
 	}
 
 	function mashParks(results) {
